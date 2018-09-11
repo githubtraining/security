@@ -1,16 +1,11 @@
-This text will be what appears on the base page for the learning lab course.
+At GitHub, we firmly believe that collaboration is the center to great software development. As you welcome the contributions from your amazing contributors, maintaining security within your project is extremely important. 
 
-Example from github-pages:
-
-```
-Did you know you can host your personal, organization, and project sites on GitHub? With GitHub Pages, you can quickly create a site from your GitHub repositories—a great way to share static content related to your repository like resumes, portfolios, and project blogs.
+This course will teach you how to build, host, and maintain a secure repository on GitHub. By following and maintaining some simple security best practices, you can rest easy knowing that your project is healthy and secure for contributors and contributions today and into the future. 
 
 In this course, you’ll learn how to:
 
-Enable GitHub Pages
-Choose a theme with Jekyll
-Use YAML front matter
-Customize your site
-Create and edit blog posts
+- Enable Security features for repositories hosted in GitHub
+- Detect and fix security vulnerability in repositories when notified by the GitHub's security alerts
+- Build stronger projects with best practices for secure repositories
+
 This course has a dedicated message board on the [GitHub Community]({{ communityBoard }}) website. If you want to discuss this course with GitHub Trainers or other participants create a post over there. The message board can also be used to troubleshoot any issue you encounter while taking this course.
-```
