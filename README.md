@@ -4,8 +4,8 @@ This course will teach you how to build, host, and maintain a secure repository 
 
 In this course, you’ll learn how to:
 
+- Enable Security features for repositories hosted in GitHub
 - Detect and fix security vulnerability in repositories when notified by the GitHub's security alerts
 - Build stronger projects with best practices for secure repositories
-- Keep your repositories up to date to have safer applications for developers and users
 
 This course has a dedicated message board on the [GitHub Community]({{ communityBoard }}) website. If you want to discuss this course with GitHub Trainers or other participants create a post over there. The message board can also be used to troubleshoot any issue you encounter while taking this course.
