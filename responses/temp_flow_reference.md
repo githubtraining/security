@@ -15,7 +15,7 @@
     - Activity: branch and fix this
     - Comment: These are dependencies in this repo's language, `x`. See examples of other dependencies in other languages that are supported "here".
     - How can we know they're secure? It's not always easy, but GitHub is watching out. 👀
-- 👤 Opens PR
+- 👤 Opens PR (PR should not be able to be merged without approval)
 
 #### 3
 - 🤖 Watch PR to see if the dependency is updated properly
@@ -25,6 +25,7 @@
 
 #### 4
 - 🤖 Open PR
+    - PR is protected from merging without approval
     - A `.gitignore` file is an important way to ignore files that might contain sensitive information.
     - Introduces `.gitignore` in PR
     - Now that we have a `.gitignore`, let's discuss what kind of files we should ignore.
@@ -33,7 +34,7 @@
       - Other generic files with authentication info, anything with passwords
       - Those things are better stored as environment variables, maybe point to OAuth as a GitHub App
     - Open a PR to change the name of the `.env` file, and add it to the `.gitignore`.
-- 👤 Changing `.env` title and, adding `.env` file to `.gitignore`.
+- 👤 Add `.env` file to `.gitignore`.
 
 #### 5
 - 🤖 Watch PR and:
