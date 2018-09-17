@@ -1,1 +1,1 @@
-Oh no! You've done something to the PR that isn't good, let's undo that and merge. 
+Oh no! You've done something to the PR that doesn't actually fix the problem. Here's how: 
