@@ -7,7 +7,7 @@ In this course, you'll learn how to build and host a secure repository in GitHub
 
 In this course you will learn how to:
 
-- Enable Security features for repositories hosted in GitHub
+- Opt into vulnerability detection for private repositories. Public repositories hosted in GitHub detects for security vulnerabilities by default
 - Detect and fix security vulnerability in repositories when notified by the security vulnerability alert
 - Keep updated with security best practises by leveraging the use of a `.gitignore` file
 
@@ -18,8 +18,15 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 ### :keyboard: Activity: Close this issue
 
 1. Read and understand the objective of this module.
-2. Close this issue when you're ready.
-3. Check for an open Pull Request for next steps.
+2. Click your profile photo in the upper-right corner of any page, then click `Settings`.
+3. In the user settings sidebar, click `Notifications`.
+4. Under "Vulnerability alerts", configure how you would like to receive notifications when GitHub detects a vulnerable dependency in your repository:
+  - Selecting `UI alerts` displays a banner in the GitHub interface.
+  - Selecting `Web` allows you to access the notifications on GitHub.
+  - Selecting `Email each time a vulnerability is found` sends an email to your default notification email.
+  - Selecting `Email a digest summary of vulnerabilities` sends a digest email with a summary of up to 10 repositories' vulnerability alerts. Use the drop-down menu to choose to receive digest emails daily or weekly.
+5. Close this issue when you're ready.
+6. Check for an open Pull Request for next steps.
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
