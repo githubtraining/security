@@ -2,22 +2,14 @@
 
 Welcome to Building Secure Repositories :tada:!
 
-In this course, you'll learn how to build and host a secure repository in GitHub. Secure Repositories are
-`xxxxxx
+In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository prevents sensitive data being exposed, enforces secure development best practises for your projects and with correct configurations, safe guards unintended access rights permissions.
 
-Welcome! What are "secure repositories"? Glad you asked! Definition etc.
-Post of examples going wrong
-What are dependencies?
-This course will...
 
-xxxxxx
-`
-
-You will learn how to:
+In this course you will learn how to:
 
 - Enable Security features for repositories hosted in GitHub
-- Detect and fix security vulnerability in repositories when notified by the Security Advisor
-- Keep updated with security best practises by introducing a `SECURITY.md` file
+- Detect and fix security vulnerability in repositories when notified by the security vulnerability alert
+- Keep updated with security best practises by leveraging the use of a `.gitignore` file
 
 ### New to GitHub?
 
