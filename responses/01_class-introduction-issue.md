@@ -15,7 +15,7 @@ In this course you will learn how to:
 
 For this course, you'll need to know how to create a branch on GitHub, commit changes using Git, and open a pull request on GitHub. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
-### :keyboard: Activity: Close this issue
+### :keyboard: Activity: Enable Vulnerability alerts
 
 1. Read and understand the objective of this module.
 2. Click your profile photo in the upper-right corner of any page, then click `Settings`.
