@@ -1,6 +1,6 @@
-title: # TODO Reviewing Pull Requests
-tagline: # TODO Start collaborating for GitHub, with GitHub.
-description: # TODO Learn how GitHub uses pull request reviews to communicate and collaborate during the development process.
+title: Building Secure Repositories on GitHub
+tagline: # TODO ??
+description: Your projects are important, and so is security. Use GitHub's security features along with best practices to keep your code (and those who use it) safe.
 template:
     name: # TODO reviewing-pull-requests
     url: # TODO https://github.com/githubtraining/review-pull-requests-template.git
@@ -11,22 +11,22 @@ before:
     body: 01_class-introduction-issue.md
 steps:
   - title: Close first issue
-    description: # TODO, Enable settings, and close issue
-    event: # TODO
-    link: # TODO https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/issues/1
+    description: After you enable GitHub Security features in your repository, close this issue.
+    event: issues.closed
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/issues/1
     actions:
-      - type: gate
-        # TODO closed issue
+      - type: createIssue
+        title: Find repository vulnerabilities
+        body: 02_find-vulnerabilities.md
       - type: respond
         with: 02_closed-issue.md
-      - type: # TODO open new issue
-        body: 02_find-vulnerabilities.md
-
+        data:
+          url: '%actions.issue.data.html_url%'
 
   - title: Open a pull request
-    description: # TODO
-    event: # TODO
-    link: # TODO https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
+    description: Open a pull request to update the dependency.
+    event: pull_request.opened
+    link: https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
         # TODO make sure there is an open pull request, and dependency is updated properly
@@ -34,37 +34,44 @@ steps:
         # TODO if no, request changes and give more instructional help (03-adding-bad-changes.md)
         # TODO If closed early, comment and reopen (03_accidental-close.md)
 
-  - title: Merge the pull request
-    description: # TODO
-    event: # TODO pull_request_review.submitted
-    link: # TODO https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/2
+  - title: Merge your pull request
+    description: Merge the pull request you've opened to update the vulnerability dependency.
+    event: pull_request.closed
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: gate
-        # TODO Make sure PR is merged
+        left: '%payload.pull_request.merged%'
       - type: # TODO comment on merged PR with 04_good-merge.md
       - type: # TODO open new PR
         body: 04_add-gitignore.md
         head: # TODO tbd, branch adding `.gitignore` file
 
-  - title: Add `.env` to the `.gitignore` file
-    description: # TODO
-    event: # TODO pull_request_review.submitted
+  - title: Add to the `.gitignore` file
+    description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
+    event: push
     link: # TODO https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
+      - type: getFileContents
+        action_id: fileContents
+        filename: .gitignore
       - type: gate
-        # TODO check to make sure that user commits adding .env to .gitignore file
-      - type:
-        # TODO Approve if good and respond with (05_good-ignore.md)
-        # TODO Request changes if not good with (05_fail-ignore.md)
+        left: '/^.env/m'
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+        - type: respond
+          with: 05_fail-ignore.md
+      - type: respond
+        with: 05_good-ignore.md
         # TODO Reopen if closed and reply with (05_early-close.md)
 
-  - title: Merge the pull request with the `.gitignore`
-    description: # TODO
-    event: # TODO pull_request_review.submitted
-    link: # TODO https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
+  - title: Merge the pull request
+    description: Merge the second pull request with updates to the `.gitignore` file
+    event: pull_request.closed
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/4
     actions:
       - type: gate
-        # TODO make sure they merged
+        left: '%payload.pull_request.merged%'
       - type: respond
         with: 06_nice-merge.md
       - type: createIssue
