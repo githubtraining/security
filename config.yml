@@ -41,15 +41,17 @@ steps:
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
-      - type: # TODO comment on merged PR with 04_good-merge.md
-      - type: # TODO open new PR
+      - type: respond
+        with: 04_good-merge.md
+      - type: createPullRequest
+        title: Add a `.gitignore` file
         body: 04_add-gitignore.md
         head: # TODO tbd, branch adding `.gitignore` file
 
   - title: Add to the `.gitignore` file
     description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
     event: push
-    link: # TODO https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
+    link: https://github.com/{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
       - type: getFileContents
         action_id: fileContents
