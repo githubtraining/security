@@ -1,8 +1,8 @@
 ## Step 1: Building Secure Repositories
 
-Welcome to Building Secure Repositories :tada:!
+### :tada: Welcome to Building Secure Repositories!
 
-In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository prevents sensitive data being exposed, enforces secure development best practises for your projects and with correct configurations, safe guards unintended access rights permissions.
+In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository prevents sensitive data being exposed, enforces secure development best practises for your projects and with correct configurations and safe guards unintended access rights permissions.
 
 
 In this course you will learn how to:
