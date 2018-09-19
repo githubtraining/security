@@ -1,4 +1,4 @@
-## Finding Vulnerabilities
+## Step 2: Finding Vulnerabilities
 
 Now you can find a vulnerability with your newly enabled settings. These settings are now automatically looking for several things. This project has some existing dependencies, or links to other projects, which may have some insecure code. Code can be insecure because of many reasons, but usually, when insecure code is found, it's fixed in updates.
 
