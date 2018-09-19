@@ -1,1 +1,1 @@
-This PR looks good, thank you for fixing the dependencies! Go ahead and merge.
+Great job, @{{ user.username }}, your pull request looks good. Thank you for fixing the vulnerable dependencies! Go ahead and merge this pull request.

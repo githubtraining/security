@@ -1,1 +1,5 @@
-Oh no! You've done something to the PR that doesn't actually fix the problem. Here's how: 
+Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
+
+If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
+
+If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
