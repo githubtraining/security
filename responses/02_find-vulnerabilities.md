@@ -13,7 +13,7 @@ A vulnerability is a problem in a project's code that could be exploited to dama
 ### GitHub's security alerts for vulnerable dependencies
 GitHub tracks public vulnerabilities in Ruby gems, NPM and Python packages on [MITRE's Common Vulnerabilities and Exposures (CVE) List.](https://cve.mitre.org/)
 
-When GitHub receives a notification of a newly-announced vulnerability, we identify public repositories (and private repositories that have opted in to vulnerability detection) that use the affected version of the dependency. Then, we send security alerts to owners and people with admin access to affected repositories. You can also configure security alerts for additional people or teams working in organization-owned repositories.
+When GitHub receives a notification of a newly-announced vulnerability, we identify public repositories (and private repositories that have opted in to vulnerability detection) that use the affected version of the dependency. Then, we send security alerts to owners and people with admin access to affected repositories. You can also configure security alerts for additional people or teams working in organisation-owned repositories.
 
 GitHub never publicly discloses identified vulnerabilities for any repository.
 
