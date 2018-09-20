@@ -10,7 +10,7 @@ Before I say good-bye, here's a recap of all the tasks you've accomplished in yo
 
 - Enable vulnerability detection for private repositories.
 - Detect and fix security vulnerability in repositories when notified by the security vulnerability alert
-- Keep updated with security best practises by leveraging the use of a `.gitignore` file
+- Keep updated with security best practices by leveraging the use of a `.gitignore` file
 
 ### What's next?
 

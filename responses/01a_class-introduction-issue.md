@@ -7,7 +7,7 @@ In this course, you'll learn how to build and host a secure repository in GitHub
 In this course you will learn how to:
 
 - Opt-in to vulnerability detection for private repositories
-  - _Note: These settings are enabled by default for public repositories_
+  - _Note: These settings are enabled by default for public repositories that are not forks._
 - Detect and fix security vulnerabilities in repositories when notified by the security vulnerability alert
 - Keep updated with security best practices by leveraging the use of a `.gitignore` file
 
