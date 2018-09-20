@@ -1,4 +1,4 @@
-Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can.
+Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change. Please go over the instructions again and make sure you've followed them as exactly as you can. Please ensure all notification settings are enabled for this tutorial.
 
 If this is a pull request, you might close it so you can start fresh. Keep trying, you'll get there!
 
