@@ -20,13 +20,12 @@ When GitHub receives a notification of a newly-announced vulnerability, we publi
 
 ### :keyboard: Activity:
 
-Follow the GitHub Flow to update the deprecated package `debug` in the `package-lock.json` file. Here's how:
+Follow the GitHub Flow to update the deprecated package `debug` in the `package.json` file. Here's how:
 
 1. Click the **Insights** tab in your repository.
 1. Click the number on the right hand side of the yellow `debug` section. When a drop-down is enabled, take note of the suggested version.
 1. Create a branch based off of `master`.
-    - _Note: For recommended JavaScript practices, the process would be to work with this repository locally, change the `package.json` file, and run `npm install`. For the sake of this course, those steps are **not necessary**.
-1. Edit the `package-lock.json` file.  Fix the vulnerability by applying the latest patch to the dependency that you took note of earlier. Commit your change.
+1. Edit the `package.json` file.  Fix the vulnerability by applying the latest patch to the dependency that you took note of earlier. Commit your change.
 1. Open a pull request with `base: master`.
 
 
