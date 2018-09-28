@@ -1,5 +1,5 @@
 title: Building Secure Repositories on GitHub
-tagline: # TODO ??
+tagline: Keep your code safe, sound, and secure in GitHub repositories
 description: Your projects are important, and so is security. Use GitHub's security features along with best practices to keep your code (and those who use it) safe.
 template:
     name: # TODO reviewing-pull-requests
@@ -47,7 +47,7 @@ steps:
       - type: createPullRequest
         title: Add a `.gitignore` file
         body: 04_add-gitignore.md
-        head: # TODO tbd, branch adding `.gitignore` file
+        head: add-gitignore
 
   - title: Add to the `.gitignore` file
     description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
