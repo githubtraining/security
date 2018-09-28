@@ -30,6 +30,7 @@ steps:
     actions:
       - type: getFileContents
         filename: package.json
+        action_id: fileContents
       - type: gate
         left: '/"debug": "\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
         operator: test
