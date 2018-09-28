@@ -40,7 +40,6 @@ steps:
       - type: removeBranchProtection
       - type: respond
         with: 03_good-pr.md
-        # TODO If closed early, comment and reopen (03_accidental-close.md)
 
   - title: Merge your pull request
     description: Merge the pull request you've opened to update the vulnerability dependency.
@@ -49,6 +48,15 @@ steps:
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
+        else:
+          - type: octokit
+            method: issues.edit
+            state: open
+            owner: '%payload.repository.owner.login%'
+            repo: '%payload.repository.name%'
+            number: '%payload.repository.pull_request.number%'
+          - type: respond
+            with: 03_accidental-close.md
       - type: respond
         with: 04_good-merge.md
       - type: createPullRequest
