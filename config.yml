@@ -28,10 +28,18 @@ steps:
     event: pull_request.opened
     link: https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3
     actions:
+      - type: getFileContents
+        filename: package.json
       - type: gate
-        # TODO make sure there is an open pull request, and dependency line is updated (unfortunately we can only check to see if the numbers are bigger than they were before)
-        # TODO if yes, approve PR and reply with 03_good-pr.md
-        # TODO if no, request changes and give more instructional help (03-adding-bad-changes.md)
+        left: '/"debug": "\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
+        operator: test
+        right: %actions.fileContents%
+        else:
+          type: respond
+          with: 03-adding-bad-changes.md
+      - type: removeBranchProtection
+      - type: respond
+        with: 03_good-pr.md
         # TODO If closed early, comment and reopen (03_accidental-close.md)
 
   - title: Merge your pull request
