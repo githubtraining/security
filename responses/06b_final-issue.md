@@ -14,7 +14,7 @@ Before I say good-bye, here's a recap of all the tasks you've accomplished in yo
 
 ### What's next?
 
-Want to learn more options to securing your repository? Check out [this documentation](https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies/).
+Want to learn more options to securing your repository? Check out [this documentation](https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies/), as well as some [security GitHub apps](https://github.com/marketplace/category/security) that might help you keep your code safe.
 
 ### Keep Learning
 
