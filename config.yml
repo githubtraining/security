@@ -18,6 +18,7 @@ steps:
       - type: createIssue
         title: Find repository vulnerabilities
         body: 02_find-vulnerabilities.md
+        action_id: issue
       - type: respond
         with: 02_closed-issue.md
         data:
