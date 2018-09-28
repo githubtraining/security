@@ -81,7 +81,6 @@ steps:
           with: 05_fail-ignore.md
       - type: respond
         with: 05_good-ignore.md
-        # TODO Reopen if closed and reply with (05_early-close.md)
 
   - title: Merge the pull request
     description: Merge the second pull request with updates to the `.gitignore` file
@@ -90,6 +89,15 @@ steps:
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
+        else:
+          - type: octokit
+            method: issues.edit
+            state: open
+            owner: '%payload.repository.owner.login%'
+            repo: '%payload.repository.name%'
+            number: '%payload.repository.pull_request.number%'
+          - type: respond
+            with: 05_early-close.md
       - type: respond
         with: 06_nice-merge.md
       - type: createIssue
