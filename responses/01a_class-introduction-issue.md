@@ -19,6 +19,8 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 
 ### :keyboard: Activity: Enable Vulnerability alerts
 
+**Is your repository public?** If so, skip below to **step 4**. These features are enabled by default on public repositories. If this is a **private repository**, continue with the instructions here.
+
 1. Click your profile photo in the upper-right corner of any page, then click **Settings**.
 1. In the user settings sidebar, click **Notifications**.
 1. Under "Vulnerability alerts", configure how you would like to receive notifications when GitHub detects a vulnerable dependency in your repository:

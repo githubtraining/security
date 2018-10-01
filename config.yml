@@ -1,0 +1,109 @@
+title: Building Secure Repositories on GitHub
+tagline: Keep your code safe, sound, and secure in GitHub repositories
+description: Your projects are important, and so is security. Use GitHub's security features along with best practices to keep your code (and those who use it) safe.
+template:
+    name: security-on-github
+    url: https://github.com/githubtraining/security-template.git
+before:
+  - type: updateBranchProtection
+  - type: createIssue
+    title: Welcome
+    body: 01_class-introduction-issue.md
+steps:
+  - title: Close first issue
+    description: After you enable GitHub Security features in your repository, close this issue.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+      - type: createIssue
+        title: Find repository vulnerabilities
+        body: 02_find-vulnerabilities.md
+        action_id: issue
+      - type: respond
+        with: 02_closed-issue.md
+        data:
+          url: '%actions.issue.data.html_url%'
+
+  - title: Open a pull request
+    description: Open a pull request to update the dependency.
+    event: pull_request.opened
+    link: 'https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3'
+    actions:
+      - type: getFileContents
+        filename: package.json
+        action_id: fileContents
+      - type: gate
+        left: '/"debug": "\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
+        operator: test
+        right: %actions.fileContents%
+        else:
+          type: respond
+          with: 03-adding-bad-changes.md
+      - type: removeBranchProtection
+      - type: respond
+        with: 03_good-pr.md
+
+  - title: Merge your pull request
+    description: Merge the pull request you've opened to update the vulnerability dependency.
+    event: pull_request.closed
+    link: '{{ repoUrl }}/pull/3'
+    actions:
+      - type: gate
+        left: '%payload.pull_request.merged%'
+        else:
+          - type: octokit
+            method: issues.edit
+            state: open
+            owner: '%payload.repository.owner.login%'
+            repo: '%payload.repository.name%'
+            number: '%payload.repository.pull_request.number%'
+          - type: respond
+            with: 03_accidental-close.md
+      - type: respond
+        with: 04_good-merge.md
+      - type: createPullRequest
+        title: Add a `.gitignore` file
+        body: 04_add-gitignore.md
+        head: add-gitignore
+
+  - title: Add to the `.gitignore` file
+    description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
+    event: push
+    link: '{{ repoUrl }}/pull/3'
+    actions:
+      - type: getFileContents
+        action_id: fileContents
+        filename: .gitignore
+      - type: gate
+        left: '/^.env/m'
+        operator: test
+        right: '%actions.fileContents%'
+        else:
+        - type: respond
+          with: 05_fail-ignore.md
+      - type: respond
+        with: 05_good-ignore.md
+
+  - title: Merge the pull request
+    description: Merge the second pull request with updates to the `.gitignore` file
+    event: pull_request.closed
+    link: '{{ repoUrl }}/pull/4'
+    actions:
+      - type: gate
+        left: '%payload.pull_request.merged%'
+        else:
+          - type: octokit
+            method: issues.edit
+            state: open
+            owner: '%payload.repository.owner.login%'
+            repo: '%payload.repository.name%'
+            number: '%payload.repository.pull_request.number%'
+          - type: respond
+            with: 05_early-close.md
+      - type: respond
+        with: 06_nice-merge.md
+      - type: createIssue
+        title: Congratulations!
+        body: 06_final-issue.md
+        data:
+          url: 'https://%user.username%.github.io/%payload.repository.name%'
