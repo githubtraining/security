@@ -35,7 +35,7 @@ steps:
       - type: gate
         left: '/"debug": "\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
         operator: test
-        right: %actions.fileContents%
+        right: '%actions.fileContents%'
         else:
           type: respond
           with: 03-adding-bad-changes.md
