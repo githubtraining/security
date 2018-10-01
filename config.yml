@@ -8,7 +8,7 @@ before:
   - type: updateBranchProtection
   - type: createIssue
     title: Welcome
-    body: 01_class-introduction-issue.md
+    body: 01a_class-introduction-issue.md
 steps:
   - title: Close first issue
     description: After you enable GitHub Security features in your repository, close this issue.
