@@ -2,8 +2,8 @@ title: Building Secure Repositories on GitHub
 tagline: Keep your code safe, sound, and secure in GitHub repositories
 description: Your projects are important, and so is security. Use GitHub's security features along with best practices to keep your code (and those who use it) safe.
 template:
-    name: # TODO reviewing-pull-requests
-    url: # TODO https://github.com/githubtraining/review-pull-requests-template.git
+    name: security-on-github
+    url: https://github.com/githubtraining/security-template.git
 before:
   - type: updateBranchProtection
   - type: createIssue
