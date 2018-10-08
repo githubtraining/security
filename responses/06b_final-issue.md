@@ -9,7 +9,7 @@ Congratulations @{{ user.username }}, you've completed this course!
 Before I say good-bye, here's a recap of all the tasks you've accomplished in your repository:
 
 - Enable vulnerability detection for private repositories.
-- Detect and fix security vulnerability in repositories when notified by the security vulnerability alert
+- Detect and fix security vulnerabilities in repositories when notified by the security vulnerability alert
 - Keep updated with security best practices by leveraging the use of a `.gitignore` file
 
 ### What's next?
