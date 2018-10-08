@@ -1,4 +1,4 @@
-## Step 2: Finding Vulnerabilities
+## Finding Vulnerabilities
 
 Now, with your newly enabled settings, GitHub is helping keep your repository secure in several ways. This project has some existing dependencies, or links to other projects, which may have some insecure code. Code can be insecure because of many reasons, but usually, when insecure code is found, it's fixed in updates.
 

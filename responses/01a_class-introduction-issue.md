@@ -1,4 +1,4 @@
-## Step 1: Building Secure Repositories
+## Building Secure Repositories
 
 ### :tada: Welcome to Building Secure Repositories!
 
