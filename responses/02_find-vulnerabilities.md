@@ -1,15 +1,14 @@
-## Step 2: Finding Vulnerabilities
+## Finding Vulnerabilities
 
-Now, with your newly enabled settings, GitHub is helping keep your repository secure in several ways. This project has some existing dependencies, or links to other projects, which may have some insecure code. Code can be insecure because of many reasons, but usually, when insecure code is found, it's fixed in updates.
+Vulnerabilities can cause a range of problems for your project or the people who use it.  A vulnerability could affect the confidentiality, integrity, or availability of a project.  Especially when dealing with dependencies, updates usually improve or fix the code vulnerabilities.
+
+This project has some existing dependencies which will need updating.
 
 ### Where do vulnerabilities come from?
 
 These are dependencies linked in this repository's `package.json` and `package-lock.json` files. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
 
 How can we know these dependencies are secure? It's not always easy, but GitHub is watching out.
-
-### Security vulnerabilities
-A vulnerability is a problem in a project's code that could be exploited to damage the confidentiality, integrity, or availability of the project or other projects that use its code. Depending on the severity level and the way your project uses the dependency, vulnerabilities can cause a range of problems for your project or the people who use it. You can track and resolve vulnerabilities for certain types of dependencies in your GitHub repository.
 
 ### GitHub's security alerts for vulnerable dependencies
 GitHub tracks public vulnerabilities in Ruby gems, NPM and Python packages.
@@ -23,15 +22,13 @@ When GitHub receives a notification of a newly-announced vulnerability, we publi
 Follow the GitHub Flow to update the deprecated package `debug` in the `package.json` file. Here's how:
 
 1. Click the **Insights** tab in your repository.
-1. Click the number on the right hand side of the yellow `debug` section. When a drop-down is enabled, take note of the suggested version.
+1. On the left hand navigation bar, click **Dependencies**.
+1. Scroll down until you see a yellow bar highlighting the dependency named `debug`. Click the number on the right hand side of the yellow `debug` section. When a drop-down is enabled, take note of the suggested version.
 1. Create a branch based off of `master`.
 1. Edit the `package.json` file.  Fix the vulnerability by applying the latest patch to the dependency that you took note of earlier. Commit your change.
 1. Open a pull request with `base: master`.
-
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
 <h3 align="center">Once you open a pull request, I'll continue looking at your work there.</h3>
-
-> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
