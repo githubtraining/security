@@ -58,12 +58,12 @@ steps:
             repo: '%payload.repository.name%'
             number: '%payload.repository.pull_request.number%'
           - type: respond
-            body: 03_accidental-close.md
+            with: 03_accidental-close.md
       - type: respond
-        with: 04_good-merge.md
+        with: 04a_good-merge.md
       - type: createPullRequest
         title: Add a `.gitignore` file
-        body: 04_add-gitignore.md
+        body: 04b_add-gitignore.md
         head: add-gitignore
 
   - title: Add to the `.gitignore` file
@@ -101,9 +101,9 @@ steps:
           - type: respond
             with: 05_early-close.md
       - type: respond
-        with: 06_nice-merge.md
+        with: 06a_nice-merge.md
       - type: createIssue
         title: Congratulations!
-        body: 06_final-issue.md
+        body: 06b_final-issue.md
         data:
           url: 'https://%user.username%.github.io/%payload.repository.name%'
