@@ -33,5 +33,3 @@ For a printable version of the steps in this course, check out the [Quick Refere
 
 <hr>
 <h3 align="center">Once you open a pull request, I'll continue looking at your work there.</h3>
-
-> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
