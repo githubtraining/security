@@ -4,6 +4,7 @@ description: Your projects are important, and so is security. Use GitHub's secur
 template:
     name: security-on-github
     url: https://github.com/githubtraining/security-template.git
+    repo: security-template
 before:
   - type: updateBranchProtection
   - type: createIssue
