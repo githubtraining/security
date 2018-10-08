@@ -22,11 +22,11 @@ When GitHub receives a notification of a newly-announced vulnerability, we publi
 Follow the GitHub Flow to update the deprecated package `debug` in the `package.json` file. Here's how:
 
 1. Click the **Insights** tab in your repository.
-1. Click the number on the right hand side of the yellow `debug` section. When a drop-down is enabled, take note of the suggested version.
+1. On the left hand navigation bar, click **Dependencies**.
+1. Scroll down until you see a yellow bar highlighting the dependency named `debug`. Click the number on the right hand side of the yellow `debug` section. When a drop-down is enabled, take note of the suggested version.
 1. Create a branch based off of `master`.
 1. Edit the `package.json` file.  Fix the vulnerability by applying the latest patch to the dependency that you took note of earlier. Commit your change.
 1. Open a pull request with `base: master`.
-
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
