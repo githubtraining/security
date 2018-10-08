@@ -58,7 +58,7 @@ steps:
             repo: '%payload.repository.name%'
             number: '%payload.repository.pull_request.number%'
           - type: respond
-            with: 03_accidental-close.md
+            body: 03_accidental-close.md
       - type: respond
         with: 04_good-merge.md
       - type: createPullRequest
