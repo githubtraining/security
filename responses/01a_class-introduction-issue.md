@@ -21,13 +21,9 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 
 **Is your repository public?** If so, skip below to **step 4**. These features are enabled by default on public repositories. If this is a **private repository**, continue with the instructions here.
 
-1. Click your profile photo in the upper-right corner of any page, then click **Settings**.
-1. In the user settings sidebar, click **Notifications**.
-1. Under "Vulnerability alerts", configure how you would like to receive notifications when GitHub detects a vulnerable dependency in your repository:
-    - Selecting `UI alerts` displays a banner in the GitHub interface.
-    - Selecting `Web` allows you to access the notifications on GitHub.
-    - Selecting `Email each time a vulnerability is found` sends an email to your default notification email.
-    - Selecting `Email a digest summary of vulnerabilities` sends a digest email with a summary of up to 10 repositories' vulnerability alerts. Use the drop-down menu to choose to receive digest emails daily or weekly.
+1. Click the **Settings** tab in your repository.
+1. Scroll down until you see **Data services**.
+1. Under **Data services**, click the check boxes to enable all of the data services.
 1. Close this issue.
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
