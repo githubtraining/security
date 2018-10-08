@@ -1,15 +1,14 @@
 ## Finding Vulnerabilities
 
-Now, with your newly enabled settings, GitHub is helping keep your repository secure in several ways. This project has some existing dependencies, or links to other projects, which may have some insecure code. Code can be insecure because of many reasons, but usually, when insecure code is found, it's fixed in updates.
+Vulnerabilities can cause a range of problems for your project or the people who use it.  A vulnerability could affect the confidentiality, integrity, or availability of a project.  Especially when dealing with dependencies, updates usually improve or fix the code vulnerabilities.
+
+This project has some existing dependencies which will need updating.
 
 ### Where do vulnerabilities come from?
 
 These are dependencies linked in this repository's `package.json` and `package-lock.json` files. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
 
 How can we know these dependencies are secure? It's not always easy, but GitHub is watching out.
-
-### Security vulnerabilities
-A vulnerability is a problem in a project's code that could be exploited to damage the confidentiality, integrity, or availability of the project or other projects that use its code. Depending on the severity level and the way your project uses the dependency, vulnerabilities can cause a range of problems for your project or the people who use it. You can track and resolve vulnerabilities for certain types of dependencies in your GitHub repository.
 
 ### GitHub's security alerts for vulnerable dependencies
 GitHub tracks public vulnerabilities in Ruby gems, NPM and Python packages.
