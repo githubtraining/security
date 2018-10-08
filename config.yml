@@ -61,6 +61,8 @@ steps:
             with: 03_accidental-close.md
       - type: respond
         with: 04a_good-merge.md
+        data:
+          url: '{{ repoUrl }}/pull/4'
       - type: createPullRequest
         title: Add a `.gitignore` file
         body: 04b_add-gitignore.md
