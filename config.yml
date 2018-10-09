@@ -78,7 +78,7 @@ steps:
         action_id: fileContents
         filename: .gitignore
       - type: gate
-        left: '/^.env/m'
+        left: '/\.env/m'
         operator: test
         right: '%actions.fileContents%'
         else:
@@ -103,10 +103,13 @@ steps:
             number: '%payload.repository.pull_request.number%'
           - type: respond
             with: 05_early-close.md
-      - type: respond
-        with: 06a_nice-merge.md
       - type: createIssue
         title: Congratulations!
         body: 06b_final-issue.md
         data:
           url: 'https://%user.username%.github.io/%payload.repository.name%'
+        action_id: finalIssue
+      - type: respond
+        with: 06a_nice-merge.md
+        data:
+          url: '%actions.finalIssue.data.html_url%'
