@@ -25,14 +25,31 @@ steps:
           url: '%actions.issue.data.html_url%'
           pages: 'https://%user.username%.github.io/%payload.repository.name%'
 
-  - title: Open a pull request
-    description: Open a pull request to update the dependency.
-    event: pull_request.opened
+  - title: Find the vulnerable dependency
+    description: Find the vulnerable dependency, and comment with the suggested update version.
+    event: issue_comment.created
+    link: '{{ repoUrl }}/issues/2'
+    actions:
+      - type: createPullRequest
+        title: Update the vulnerable dependency
+        body: 03_update-dependency.md
+        head: update-dependency
+        action_id: dependency_pr
+      - type: respond
+        with: 03_found-vulnerability.md
+        data:
+          url: '%actions.dependency_pr.data.html_url%'
+      - type: closeIssue
+        issue: Find repository vulnerabilities
+
+  - title: Update the dependency version
+    description: Edit the file in the pull request to update the dependency.
+    event: pull_request.synchronize
     link: 'https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3'
     actions:
       - type: getFileContents
-        filename: package.json
         action_id: fileContents
+        filename: package.json
       - type: gate
         left: '/"debug": "\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
         operator: test
@@ -43,8 +60,6 @@ steps:
       - type: removeBranchProtection
       - type: respond
         with: 03_good-pr.md
-      - type: closeIssue
-        issue: Find repository vulnerabilities
 
   - title: Merge your pull request
     description: Merge the pull request you've opened to update the vulnerability dependency.
@@ -75,7 +90,7 @@ steps:
   - title: Add to the `.gitignore` file
     description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
     event: pull_request.synchronize
-    link: '{{ repoUrl }}/pull/3'
+    link: '{{ repoUrl }}/pull/4'
     actions:
       - type: getFileContents
         action_id: fileContents
