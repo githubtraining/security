@@ -30,7 +30,7 @@ steps:
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/2'
     actions:
-      - type: create PR
+      - type: createPullRequest
         title: Update the vulnerable dependency
         body: 03_update-dependency.md
         head: update-dependency
