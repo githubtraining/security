@@ -43,6 +43,8 @@ steps:
       - type: removeBranchProtection
       - type: respond
         with: 03_good-pr.md
+      - type: closeIssue
+        issue: Find repository vulnerabilities
 
   - title: Merge your pull request
     description: Merge the pull request you've opened to update the vulnerability dependency.
