@@ -23,6 +23,7 @@ steps:
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
+          pages: 'https://%user.username%.github.io/%payload.repository.name%'
 
   - title: Open a pull request
     description: Open a pull request to update the dependency.
