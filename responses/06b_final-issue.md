@@ -18,7 +18,7 @@ Want to learn more options to securing your repository? Check out the [documenta
 
 ### Keep Learning
 
-Want to keep learning? Feel free to [check out our other courses]({{ host }}/courses)?
+Want to keep learning? Feel free to [check out our other courses]({{ host }}/courses).
 
 <hr>
 <h3 align="center">I won't respond to this issue, go ahead and close it when finished!</h3>
