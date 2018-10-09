@@ -1,3 +1,3 @@
-Great job, @{{ user.username }}, your pull request looks good. Thank you for fixing the vulnerable dependencies! Go ahead and merge this pull request.
+Great job, @{{ user.username }}, your pull request looks good. Thank you for fixing the vulnerable dependencies! Go ahead and **merge this pull request**.
 
 _Note: You might notice that this project has a `package.json` file, but no `package-lock.json` file. We are doing all parts of this activity on GitHub.com. If you work with a project like this in your local environment, you might notice some differences. Regardless of what dependency files you use, the main concepts of this course still apply._
