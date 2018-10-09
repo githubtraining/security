@@ -13,13 +13,12 @@ A `.gitignore` file should be committed into your repository, in order to share 
 ### :keyboard: Activity: Adding an .env file and updating the .gitignore file
 
 1. Within this pull request, go to **Files changed**.
-1. Edit the `.gitignore` file at the root of the project to include the newly created `.env` file. This will ensure that the file will not be tracked and prevents from accidental commits.
-    - _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. Once sensitive information is committed, the most important thing is to change any tokens or passwords, and then contact GitHub Support for help correcting your history.
-1. Edit the name of the `.env` file to be `.env-example` instead. This way, it can serve as an example of how `.env` files should look, but won't actually contain any sensitive data.
+1. Edit the `.gitignore` file at the root of the project to include a file named `.env`. This will ensure that the file will not be tracked and prevents from accidental commits.
+    - _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. Once sensitive information is committed, the most important thing is to change any tokens or passwords, and then contact GitHub Support for help correcting your history. In this case, no action is needed.
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
-<h3 align="center">Return to this issue for my next comment</h3>
+<h3 align="center">Return to this pull request for my next comment</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
