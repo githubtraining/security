@@ -78,7 +78,7 @@ steps:
         action_id: fileContents
         filename: .gitignore
       - type: gate
-        left: '/^.env/m'
+        left: '/\.env/m'
         operator: test
         right: '%actions.fileContents%'
         else:
