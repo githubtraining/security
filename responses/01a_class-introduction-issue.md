@@ -23,7 +23,6 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 1. Scroll down until you see **Data services**.
 1. Under **Data services**, click the check boxes to enable all of the data services.
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
-1. Close this issue.
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
