@@ -6,7 +6,7 @@ This project has some existing dependencies which will need updating.
 
 ### Where do vulnerabilities come from?
 
-These are dependencies linked in this repository's `package.json` and `package-lock.json` files. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
+This project's dependencies are defined in the `package.json` file because it's a Node.js project. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
 
 How can we know these dependencies are secure? It's not always easy, but GitHub is watching out.
 
