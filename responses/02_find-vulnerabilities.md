@@ -13,7 +13,7 @@ How can we know these dependencies are secure? It's not always easy, but GitHub 
 ### GitHub's security alerts for vulnerable dependencies
 GitHub tracks public vulnerabilities in Ruby gems, NPM and Python packages.
 
-When GitHub receives a notification of a newly-announced vulnerability, we public repositories (and private repositories that have opted in to vulnerability detection) that use the affected version of the dependency. Then, we send security alerts to owners and people with admin access to affected repositories. Though the owners are the ones contacted by default, it's possible to configure specific teams or individuals to get these important notifications exclusively.
+When GitHub receives a notification of a newly-announced vulnerability, we check against public repositories (and private repositories that have opted in to vulnerability detection) that use the affected version of the dependency. Then, we send security alerts to owners and people with admin access to affected repositories. Though the owners are the ones contacted by default, it's possible to configure specific teams or individuals to get these important notifications exclusively.
 
 **GitHub never publicly discloses identified vulnerabilities for any repository.**
 
