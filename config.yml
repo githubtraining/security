@@ -54,7 +54,7 @@ steps:
         action_id: fileContents
         filename: package.json
       - type: gate
-        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/gm'
+        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/m'
         operator: test
         right: '%actions.fileContents%'
         else:
