@@ -66,6 +66,7 @@ steps:
     event: pull_request.closed
     link: '{{ repoUrl }}/pull/3'
     actions:
+      - type: updateBranchProtection
       - type: gate
         left: '%payload.pull_request.merged%'
         else:
