@@ -17,7 +17,7 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 
 ### :keyboard: Activity: Enable Vulnerability alerts & GitHub Pages
 
-**Is your repository public?** If so, skip below to **step 4**. These features are enabled by default on public repositories. If this is a **private repository**, continue with the instructions here.
+**Is your repository public?** If so, only complete **step 1** and **step 4**. These features are enabled by default on public repositories. If this is a **private repository**, continue with the instructions here.
 
 1. Click the **Settings** tab in your repository.
 1. Scroll down until you see **Data services**.
