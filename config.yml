@@ -48,7 +48,7 @@ steps:
   - title: Update the dependency version
     description: Edit the file in the pull request to update the dependency.
     event: pull_request.synchronize
-    link: 'https://github.com//{{ course.Organization.login }}/{{ registration.repositoryName }}/pull/3'
+    link: '{{ repoUrl }}/pull/3'
     actions:
       - type: getFileContents
         action_id: fileContents
@@ -58,7 +58,7 @@ steps:
         operator: test
         right: '%actions.fileContents%'
         else:
-          type: respond
+        - type: respond
           with: 03-adding-bad-changes.md
       - type: removeBranchProtection
       - type: respond
