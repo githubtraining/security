@@ -54,11 +54,12 @@ steps:
         action_id: fileContents
         filename: package.json
       - type: gate
-        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/m'
+        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/g'
         operator: test
         right: '%actions.fileContents%'
         else:
         - type: respond
+          issue: Update the vulnerable dependency
           with: 03-adding-bad-changes.md
       - type: removeBranchProtection
       - type: respond
