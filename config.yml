@@ -1,6 +1,6 @@
-title: Building Secure Repositories on GitHub
+title: Securing your workflows
 tagline: Keep your code safe, sound, and secure in GitHub repositories
-description: Your projects are important, and so is security. Use GitHub's security features along with best practices to keep your code (and those who use it) safe.
+description: Learn security best practices and keep your project’s contributions—and contributors—safe.
 template:
     name: security-on-github
     repo: security-template
