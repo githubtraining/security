@@ -60,7 +60,7 @@ steps:
         else:
         - type: respond
           issue: 3
-          with: 03-adding-bad-changes.md
+          with: 03_adding-bad-changes.md
       - type: removeBranchProtection
       - type: respond
         with: 03_good-pr.md
