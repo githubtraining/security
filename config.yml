@@ -12,17 +12,9 @@ before:
 steps:
   - title: Enable security settings
     description: Enable GitHub Security features and GitHub Pages in your repository
-    event: deployment_status
+    event: deployment
     link: '{{ repoUrl }}/issues/1'
     actions:
-      - type: gate
-        left: '%payload.deployment_status.state%'
-        operator: ===
-        right: success
-      - type: gate
-        left: '%payload.deployment.environment%'
-        operator: ===
-        right: github-pages
       - type: createIssue
         title: Find repository vulnerabilities
         body: 02_find-vulnerabilities.md
