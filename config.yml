@@ -27,13 +27,13 @@ steps:
         title: Find repository vulnerabilities
         body: 02_find-vulnerabilities.md
         action_id: issue
+      - type: closeIssue
+        issue: Welcome
       - type: respond
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
           pages: 'https://%user.username%.github.io/%payload.repository.name%'
-      - type: closeIssue
-        issue: Welcome
 
   - title: Find the vulnerable dependency
     description: Find the vulnerable dependency, and comment with the suggested update version.
