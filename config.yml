@@ -54,7 +54,7 @@ steps:
         action_id: fileContents
         filename: package.json
       - type: gate
-        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/gm' # TODO tidy this regex if possible to actually check for the correct updated dependency
+        left: '/"debug": "[\^\~\>]?\=?\d+\.\d+\.\d+"/gm'
         operator: test
         right: '%actions.fileContents%'
         else:
