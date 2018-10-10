@@ -22,6 +22,7 @@ steps:
       - type: closeIssue
         issue: Welcome
       - type: respond
+        issue: Welcome
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
