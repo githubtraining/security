@@ -10,7 +10,7 @@ If you create a file in your repository named `.gitignore`, Git uses it to deter
 
 A `.gitignore` file should be committed into your repository, in order to share the ignore rules with any other users that clone the repository. There are many examples of `.gitignore` files available for you to use in your own projects in the [gitignore](https://github.com/github/gitignore) repository.
 
-### :keyboard: Activity: Adding an .env file and updating the .gitignore file
+### :keyboard: Activity: Updating the .gitignore file
 
 1. Within this pull request, go to **Files changed**.
 1. Edit the `.gitignore` file at the root of the project to include the newly created `.env` file. This will ensure that the file will not be tracked and prevents from accidental commits.

@@ -26,6 +26,8 @@ For this course, you'll need to know how to create a branch on GitHub, commit ch
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
+> Turning on GitHub Pages creates a deployment of your repository. I may take up to a minute to respond as I await the deployment.
+
 <hr>
 <h3 align="center">Return to this issue for my next comment</h3>
 
