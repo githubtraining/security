@@ -29,4 +29,4 @@ Follow the GitHub Flow to update the deprecated package `debug` in the `package.
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
-<h3 align="center">Once you open a pull request, I'll continue looking at your work there.</h3>
+<h3 align="center">Return to this issue for my next comment.</h3>
