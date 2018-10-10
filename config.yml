@@ -11,10 +11,18 @@ before:
     body: 01a_class-introduction-issue.md
 steps:
   - title: Enable security settings
-    description: After you enable GitHub Security features in your repository, close this issue.
-    event: issues.closed
+    description: Enable GitHub Security features and GitHub Pages in your repository
+    event: deployment_status
     link: '{{ repoUrl }}/issues/1'
     actions:
+      - type: gate
+        left: '%payload.deployment_status.state%'
+        operator: ===
+        right: success
+      - type: gate
+        left: '%payload.deployment.environment%'
+        operator: ===
+        right: github-pages
       - type: createIssue
         title: Find repository vulnerabilities
         body: 02_find-vulnerabilities.md
@@ -24,6 +32,8 @@ steps:
         data:
           url: '%actions.issue.data.html_url%'
           pages: 'https://%user.username%.github.io/%payload.repository.name%'
+      - type: closeIssue
+        issue: Welcome
 
   - title: Find the vulnerable dependency
     description: Find the vulnerable dependency, and comment with the suggested update version.
