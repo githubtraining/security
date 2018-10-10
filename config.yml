@@ -106,6 +106,7 @@ steps:
         else:
         - type: respond
           with: 05_fail-ignore.md
+      - type: removeBranchProtection
       - type: respond
         with: 05_good-ignore.md
 
