@@ -6,17 +6,11 @@ template:
     repo: security-template
 before:
   - type: updateBranchProtection
-    {% if registration.private %}
-      - type: createIssue
-        title: Welcome
-        body: 01a_class-introduction-issue.md
-        action_id: issue
-    {% else %}
-      - type: createIssue
-        title: Welcome
-        body: 01b_class-introduction-issue.md
-        action_id: issue
-    {% endif %}
+  - type: createIssue
+    title: Welcome
+    body: 01a_class-introduction-issue.md
+    action_id: issue
+
 steps:
   - title: Enable security settings
     description: Enable GitHub Security features and GitHub Pages in your repository
