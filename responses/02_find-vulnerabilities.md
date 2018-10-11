@@ -2,11 +2,11 @@
 
 Security vulnerabilities can cause a range of problems for your project or the people who use it.  A vulnerability could affect the confidentiality, integrity, or availability of a project.  Sometimes vulnerabilities don't live in the code you write, but in the libraries and software your project depends on. When dealing with vulnerable dependencies, staying up-to-date with the most recent versions is the best line of defense.
 
-This project has some existing dependencies which will need updating to stay secure.
+This repository has some existing dependencies which will need updating to stay secure.
 
 ### How can we identify dependencies and if they are vulnerable?
 
-This project's dependencies are defined in the `package.json` file because it's a Node.js project utilizing NPM. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
+This repository's dependencies are defined in the `package.json` file because it's a Node.js project utilizing NPM. For our time together, we'll be focusing on these JavaScript dependencies, but many languages can have dependency files, like a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
 
 How can we know these dependencies are secure? It's not always easy, but GitHub is watching out.
 
@@ -17,7 +17,7 @@ When GitHub receives a notification of a newly-announced vulnerability, we check
 
 **GitHub never publicly discloses identified vulnerabilities for any repository.**
 
-### :keyboard: Activity:
+### :keyboard: Activity: Identify the suggested version update
 
 Use GitHub's security alerts to identify a vulnerable NPM dependency. Here's how:
 
