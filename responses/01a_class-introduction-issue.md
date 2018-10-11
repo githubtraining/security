@@ -1,21 +1,19 @@
-## Building Secure Repositories
-
-### :tada: Welcome to Building Secure Repositories!
+## :tada: Welcome to Securing your workflows!
 
 In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository prevents sensitive data from being exposed, enforces secure development best practices, and safe guards unintended access rights permissions.
 
 In this course you will learn how to:
 
-- Opt-in to vulnerability detection for private repositories
+- Opt-in to vulnerability alerts for private repositories
   - _Note: These settings are enabled by default for public repositories that are not forks._
-- Detect and fix security vulnerabilities in repositories when notified by the security vulnerability alert
-- Keep updated with security best practices by leveraging the use of a `.gitignore` file
+- Detect and fix vulnerable dependencies in repositories when notified by a vulnerability alert
+- Follow security best practices to keep sensitive data out of your repositories by leveraging the use of a `.gitignore` file
 
 ### New to GitHub?
 
 For this course, you'll need to know how to create a branch on GitHub, commit changes using Git, and open a pull request on GitHub. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
-### :keyboard: Activity: Enable Vulnerability alerts & GitHub Pages
+### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
 
 **Is your repository public?** If so, only complete **step 1** and **step 4**. These features are enabled by default on public repositories. If this is a **private repository**, continue with the instructions here.
 
