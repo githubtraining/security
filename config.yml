@@ -6,13 +6,16 @@ template:
     repo: security-template
 before:
   - type: updateBranchProtection
-  - type: createIssue
-    title: Welcome
-    body: 01a_class-introduction-issue.md
   - type: createPullRequest
     title: Update the vulnerable dependency
     body: 03_update-dependency.md
     head: update-dependency
+    action_id: new_pr
+  - type: createIssue
+    title: Welcome
+    body: 01a_class-introduction-issue.md
+    data:
+      private: '%actions.new_pr.data.repository.private%'
   - type: createPullRequest
     title: Add a `.gitignore` file
     body: 04b_add-gitignore.md
@@ -35,7 +38,6 @@ steps:
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
-          private: '%payload.repository.private%'
           pages: 'https://%user.username%.github.io/%payload.repository.name%'
 
   - title: Find the vulnerable dependency
