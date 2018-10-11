@@ -8,12 +8,12 @@ In this pull request, I'm adding a `.gitignore` file.
 
 If you create a file in your repository named `.gitignore`, Git uses it to determine which files and directories to ignore when making a commit. This is one way to promote security best practices and keep files containing sensitive data, such as configuration or `env` files, out of your repositories.
 
-Additionally, the `.gitignore` file can, and should, be committed into your repository.  By sharing this file and making it part of your code, it will also help other users that contribute to the repository to avoid committing sensitive data. There are many examples of `.gitignore` files available for you to use in your own projects in the [gitignore](https://github.com/github/gitignore) repository.
+Additionally, the `.gitignore` file can, and should, be committed into your repository.  By sharing this file and making it part of your code, it will also help other users that contribute to the repository to avoid committing sensitive data. There are many examples of `.gitignore` files available for you to use in your own repositories in the [gitignore](https://github.com/github/gitignore) repository.
 
 ### :keyboard: Activity: Updating the .gitignore file
 
 1. Within this pull request, go to **Files changed**.
-1. Edit the `.gitignore` file at the root of the project to prevent an `.env` file from being added to the repository. This will ensure that the file will not be tracked and prevents from accidental commits.
+1. Edit the `.gitignore` file at the root of the repository to prevent an `.env` file from being added to the repository. This will ensure that the file will not be tracked and prevents from accidental commits.
     - _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. Once sensitive information is committed, the most important thing is to change any tokens or passwords, and then contact GitHub Support for help correcting your history._
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
