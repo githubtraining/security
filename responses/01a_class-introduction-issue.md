@@ -16,9 +16,10 @@ In this course you will learn how to:
 
 For this course, you'll need to be comfortable with the GitHub Flow. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
+{% if registration.private %}
+
 ### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
 
-{% if registration.private %}
 
 1. Click the **Settings** tab in your repository.
 1. Scroll down until you see **Data services**.
@@ -26,6 +27,9 @@ For this course, you'll need to be comfortable with the GitHub Flow. If you need
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
 
 {% else %}
+
+### :keyboard: Activity: Enable GitHub Pages
+
 
 1. Click the **Settings** tab in your repository.
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
