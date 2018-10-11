@@ -2,7 +2,23 @@
 
 ![celebrate](https://octodex.github.com/images/benevocats.jpg)
 
-Congratulations @{{ user.username }}, you've completed this course!
+Congratulations @{{ user.username }}, you've completed this course! But, a good thing to do now is limit this app's permissions.
+
+When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
+
+As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I might not be able to congratulate you on achieving this task, but know I'm excited about your progress.
+
+
+### :keyboard: Activity: Restrict this app
+1. Click on the **Settings** tab in your repository
+1. On the left hand side, click **Integrations & services**
+1. Find **Learning Lab**, and click **Configure**
+1. Enter your password if prompted
+1. Choose the repository access that you'd like to keep
+  - _Note: If you'd like to take more Learning Lab courses in the future, **do not** uninstall Learning Lab. If you uninstall Learning Lab, you'll need to reinstall the app when you try another course. You may also lose some progress._
+1. To make taking Learning Lab courses easier in the future, click **Only select repositories**
+1. Select a repository that you have completed with Learning Lab, like this one
+1. Click **Save**
 
 ### What went well
 
