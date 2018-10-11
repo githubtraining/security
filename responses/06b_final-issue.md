@@ -2,7 +2,20 @@
 
 ![celebrate](https://octodex.github.com/images/benevocats.jpg)
 
-Congratulations @{{ user.username }}, you've completed this course!
+Congratulations @{{ user.username }}, you've completed this course! But, a good thing to do now is uninstall this app from your repository.
+
+When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
+
+As much as it pains me to leave you, I want you to uninstall me. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
+
+
+### :keyboard: Activity: Remove this app
+1. Click on the **Settings** tab in your repository
+2. On the left hand side, click **Integrations & services**
+3. Find **Learning Lab**, and click **Configure**
+4. Enter your password if prompted
+5. Choose the repository access that you'd like to keep
+  - _Note: If you'd like to take more Learning Lab courses in the future, **do not** uninstall Learning Lab. If you uninstall Learning Lab, you'll need to reinstall the app when you try another course. You may also lose some progress._
 
 ### What went well
 
