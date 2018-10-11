@@ -20,7 +20,7 @@ before:
 
 steps:
   - title: Enable repository settings
-    description: Enable settings in your repository for the next activities
+    description: Enable settings in your repository for the next activities.
     event: deployment
     link: '{{ repoUrl }}/issues/1'
     actions:
@@ -111,7 +111,7 @@ steps:
         with: 05_good-ignore.md
 
   - title: Merge the pull request
-    description: Merge the second pull request with updates to the `.gitignore` file
+    description: Merge the second pull request with updates to the `.gitignore` file.
     event: pull_request.closed
     link: '{{ repoUrl }}/pull/3'
     actions:
