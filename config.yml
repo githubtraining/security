@@ -70,7 +70,6 @@ steps:
     event: pull_request.closed
     link: '{{ repoUrl }}/pull/3'
     actions:
-      - type: updateBranchProtection
       - type: gate
         left: '%payload.pull_request.merged%'
         else:
@@ -82,6 +81,7 @@ steps:
             number: '%payload.repository.pull_request.number%'
           - type: respond
             with: 03_accidental-close.md
+      - type: updateBranchProtection
       - type: createPullRequest
         title: Add a `.gitignore` file
         body: 04b_add-gitignore.md
