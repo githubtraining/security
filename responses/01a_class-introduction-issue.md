@@ -1,6 +1,4 @@
-## Building Secure Repositories
-
-### :tada: Welcome to Building Secure Repositories!
+## :tada: Welcome to Securing your workflows!
 
 In this course, you'll learn how to build and host a secure repository in GitHub.  A secure repository prevents sensitive data from being exposed, enforces secure development best practices, and safe guards unintended access rights permissions.
 
