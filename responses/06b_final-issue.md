@@ -6,7 +6,7 @@ Congratulations @{{ user.username }}, you've completed this course! But, a good 
 
 When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
 
-As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I might not be able to congratulate you on achieving this task, but know I'm excited about your progress.
+As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
 
 
 ### :keyboard: Activity: Restrict this app
@@ -25,7 +25,7 @@ As much as it pains me to leave you, I want you to uninstall me on some of your 
 Before I say good-bye, here's a recap of all the tasks you've accomplished in your repository:
 
 - Enable vulnerable dependency detection for private repositories
-- Detect and fix outdated dependencies with security vulnerabilities in repositories after being notified by a GitHub vulnerability alert
+- Detect and fix outdated dependencies with security vulnerabilities
 - Keep sensitive data out of your repository by leveraging the use of a `.gitignore` file
 
 ### What's next?
@@ -37,4 +37,4 @@ Want to learn more options to secure your repository? Check out the [documentati
 Want to keep learning? Feel free to [check out our other courses]({{ host }}/courses).
 
 <hr>
-<h3 align="center">I won't respond to this issue, go ahead and close it when finished!</h3>
+<h3 align="center">I won't respond to this issue, go ahead and close it when finished</h3>

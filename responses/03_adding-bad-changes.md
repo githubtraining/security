@@ -2,4 +2,4 @@ Uh oh @{{ user.username }}, something went wrong! I wasn't expecting this change
 
 If this is a pull request, so you can keep editing the file here. Keep trying, you'll get there!
 
-If you would like assistance troubleshooting the issue you are encountering, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
+If you would like help troubleshooting, create a post on the [GitHub Community]({{ communityBoard }}) board. You might also want to search for your issue to see if other people have resolved it in the past.
