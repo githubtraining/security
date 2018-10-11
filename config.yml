@@ -10,12 +10,16 @@ before:
     title: Update the vulnerable dependency
     body: 03_update-dependency.md
     head: update-dependency
-    action_id: new_pr
+  - type: octokit
+    method: 'repos.get'
+    owner: '%user.username%'
+    repo: '%course.template.name%'
+    action_id: gotten_repo
   - type: createIssue
     title: Welcome
     body: 01a_class-introduction-issue.md
     data:
-      private: '%actions.new_pr.data.repository.private%'
+      private: '%actions.gotten_repo.data.private%'
   - type: createPullRequest
     title: Add a `.gitignore` file
     body: 04b_add-gitignore.md
