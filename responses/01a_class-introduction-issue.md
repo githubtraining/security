@@ -16,7 +16,7 @@ In this course you will learn how to:
 
 For this course, you'll need to be comfortable with the GitHub Flow. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
-{% if registration.private %}
+{% if private %}
 
 ### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
 
