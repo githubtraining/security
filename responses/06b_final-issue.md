@@ -8,13 +8,13 @@ Congratulations @{{ user.username }}, you've completed this course!
 
 Before I say good-bye, here's a recap of all the tasks you've accomplished in your repository:
 
-- Enable vulnerability detection for private repositories.
-- Detect and fix security vulnerabilities in repositories when notified by the security vulnerability alert
-- Keep updated with security best practices by leveraging the use of a `.gitignore` file
+- Enable vulnerable dependency detection for private repositories
+- Detect and fix outdated dependencies with security vulnerabilities in repositories after being notified by a GitHub vulnerability alert
+- Keep sensitive data out of your repository by leveraging the use of a `.gitignore` file
 
 ### What's next?
 
-Want to learn more options to securing your repository? Check out the [documentation for security alerts](https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies/), as well as some [GitHub apps for security](https://github.com/marketplace/category/security) that might help you keep your code safe.
+Want to learn more options to secure your repository? Check out the [documentation for security alerts](https://help.github.com/articles/about-security-alerts-for-vulnerable-dependencies/), as well as some [GitHub apps for security](https://github.com/marketplace/category/security) that might help you keep your code safe.
 
 ### Keep Learning
 
