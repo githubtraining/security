@@ -8,7 +8,7 @@ before:
   - type: updateBranchProtection
   - type: createIssue
     title: Welcome
-    body: 01a_class-icntroduction-issue.md
+    body: 01a_class-introduction-issue.md
   - type: createPullRequest
     title: Update the vulnerable dependency
     body: 03_update-dependency.md
