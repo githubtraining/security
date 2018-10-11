@@ -17,7 +17,7 @@ When GitHub receives a notification of a newly-announced vulnerability, we check
 
 **GitHub never publicly discloses identified vulnerabilities for any repository.**
 
-### :keyboard: Activity:
+### :keyboard: Activity: Identify the suggested version update
 
 Use GitHub's security alerts to identify a vulnerable NPM dependency. Here's how:
 
