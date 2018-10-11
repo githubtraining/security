@@ -19,8 +19,8 @@ before:
     head: add-gitignore
 
 steps:
-  - title: Enable security settings
-    description: Enable GitHub Security features and GitHub Pages in your repository
+  - title: Enable repository settings
+    description: Enable settings in your repository for the next activities
     event: deployment
     link: '{{ repoUrl }}/issues/1'
     actions:
