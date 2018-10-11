@@ -81,7 +81,7 @@ steps:
             number: '%payload.repository.pull_request.number%'
           - type: respond
             with: 03_accidental-close.md
-      - type: open issue
+      - type: createIssue
         action_id: new_issue
         with: 04_enable-branch-protection.md
         title: Enable branch protection
