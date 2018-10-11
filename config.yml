@@ -35,6 +35,7 @@ steps:
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
+          private: '%payload.repository.private%'
           pages: 'https://%user.username%.github.io/%payload.repository.name%'
 
   - title: Find the vulnerable dependency
