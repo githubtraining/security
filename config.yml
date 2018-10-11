@@ -20,6 +20,7 @@ before:
     body: 04b_add-gitignore.md
     head: add-gitignore
     action_id: new_pr
+
 steps:
   - title: Enable security settings
     description: Enable GitHub Security features and GitHub Pages in your repository
