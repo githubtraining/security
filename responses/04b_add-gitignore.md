@@ -1,24 +1,27 @@
 ## Taking advantage of the `.gitignore` file for security
 
-From time to time, there are files you don't want Git to check in to GitHub. You may want to ignore files that contain sensitive credentials or other information which should not be pushed to your repository. There are a few ways to tell Git which files to ignore.
+From time to time, there are files you don't want Git to check in to GitHub. You may want to ignore files that contain sensitive credentials or information which should not be pushed to your repository. There are a few ways to tell Git which files to ignore.
 
 In this pull request, I'm adding a `.gitignore` file.
 
 ### Ignoring files
 
-If you create a file in your repository named `.gitignore`, Git uses it to determine which files and directories to ignore when making a commit. This is one way to promote security best practices and keep files containing sensitive data, such as configuration or `env` files, out of your repositories.
+Git uses a file called `.gitignore` to decide which files and directories to ignore when committing.  Keep files containing sensitive data, like configuration or `env` files, out of your repositories. This is one way to promote security best practices.
 
-Additionally, the `.gitignore` file can, and should, be committed into your repository.  By sharing this file and making it part of your code, it will also help other users that contribute to the repository to avoid committing sensitive data. There are many examples of `.gitignore` files available for you to use in your own repositories in the [gitignore](https://github.com/github/gitignore) repository.
+Additionally, the `.gitignore` file can, and should, be committed into your repository.  By sharing this file and making it part of your code, it will also help others. Other users that contribute to the repository will also avoid committing sensitive data. There are many examples of `.gitignore` files available for you to use in your own repositories. You can find them in the [gitignore](https://github.com/github/gitignore) repository.
 
 ### :keyboard: Activity: Updating the .gitignore file
 
-1. Within this pull request, go to **Files changed**.
-1. Edit the `.gitignore` file at the root of the repository to prevent an `.env` file from being added to the repository. This will ensure that the file will not be tracked and prevents from accidental commits.
-    - _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. Once sensitive information is committed, the most important thing is to change any tokens or passwords, and then contact GitHub Support for help correcting your history._
+1. Within this pull request, go to **Files changed**
+1. Click the pencil in the right upper corner to edit the `.gitignore` file
+1. Edit the file by adding `.env` to line 1
+1. Scroll down, and commit your change
+
+ > _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. After committing sensitive data, first change any tokens or passwords. Then, contact GitHub Support for help correcting your history._
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
 <h3 align="center">Return to this pull request for my next comment</h3>
 
-> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds and refresh the page for your next steps._
+> _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
