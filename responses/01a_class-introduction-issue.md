@@ -16,14 +16,27 @@ In this course you will learn how to:
 
 For this course, you'll need to be comfortable with the GitHub Flow. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
+{% if registration.private %}
+
 ### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
 
-**Is your repository public?** If so, only complete **step 1** and **step 4**. These are default settings on public repositories. If this is a **private repository**, continue with the instructions here.
 
 1. Click the **Settings** tab in your repository.
 1. Scroll down until you see **Data services**.
 1. Under **Data services**, click the check boxes to enable all the data services.
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
+
+{% else %}
+
+### :keyboard: Activity: Enable GitHub Pages
+
+
+1. Click the **Settings** tab in your repository.
+1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
+
+{% endif %}
+
+
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
