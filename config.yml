@@ -25,7 +25,7 @@ steps:
   - title: Enable repository settings
     description: Enable settings in your repository for the next activities.
     event: deployment
-    link: '{{ repoUrl }}/issues/1'
+    link: '{{ repoUrl }}/issues/2'
     actions:
       - type: createIssue
         title: Find repository vulnerabilities
@@ -55,7 +55,7 @@ steps:
   - title: Update the dependency version
     description: Edit the file in the pull request to update the dependency.
     event: pull_request.synchronize
-    link: '{{ repoUrl }}/pull/2'
+    link: '{{ repoUrl }}/pull/1'
     actions:
       - type: getFileContents
         action_id: fileContents
@@ -75,7 +75,7 @@ steps:
   - title: Merge your pull request
     description: Merge the pull request you've opened to update the vulnerability dependency.
     event: pull_request.closed
-    link: '{{ repoUrl }}/pull/2'
+    link: '{{ repoUrl }}/pull/1'
     actions:
       - type: gate
         left: '%payload.pull_request.merged%'
