@@ -48,7 +48,7 @@ steps:
       - type: respond
         with: 03_found-vulnerability.md
         data:
-          url: 'https://github.com/%user.username%/%payload.repository.name%/pull/2'
+          url: 'https://github.com/%user.username%/%payload.repository.name%/pull/1'
       - type: closeIssue
         issue: Find repository vulnerabilities
 
