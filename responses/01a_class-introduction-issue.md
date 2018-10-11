@@ -18,6 +18,8 @@ For this course, you'll need to be comfortable with the GitHub Flow. If you need
 
 {% if registration.private %}
 
+### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
+
 1. Click the **Settings** tab in your repository.
 1. Scroll down until you see **Data services**.
 1. Under **Data services**, click the check boxes to enable all the data services.
@@ -25,7 +27,7 @@ For this course, you'll need to be comfortable with the GitHub Flow. If you need
 
 {% else %}
 
-### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages
+### :keyboard: Activity: Enable GitHub Pages
 
 1. Click the **Settings** tab in your repository.
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
