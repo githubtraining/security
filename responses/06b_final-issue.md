@@ -2,7 +2,7 @@
 
 ![celebrate](https://octodex.github.com/images/benevocats.jpg)
 
-Congratulations @{{ user.username }}, you've completed this course! But, a good thing to do now is limit this app's permissions.
+Congratulations @{{ user.username }}, you've completed this course! 
 
 When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
 
