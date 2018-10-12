@@ -2,13 +2,15 @@
 
 From time to time, there are files you don't want Git to check in to GitHub. You may want to ignore files that contain sensitive credentials or information which should not be pushed to your repository. There are a few ways to tell Git which files to ignore.
 
-In this pull request, I'm adding a `.gitignore` file.
-
 ### Ignoring files
 
 Git uses a file called `.gitignore` to decide which files and directories to ignore when committing.  Keep files containing sensitive data, like configuration or `env` files, out of your repositories. This is one way to promote security best practices.
 
 Additionally, the `.gitignore` file can, and should, be committed into your repository.  By sharing this file and making it part of your code, it will also help others. Other users that contribute to the repository will also avoid committing sensitive data. There are many examples of `.gitignore` files available for you to use in your own repositories. You can find them in the [gitignore](https://github.com/github/gitignore) repository.
+
+## Step 5: Ignore files
+
+In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` commonly include sensitive data. Let's add those files to the `.gitignore`.
 
 ### :keyboard: Activity: Updating the .gitignore file
 

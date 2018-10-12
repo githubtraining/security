@@ -6,8 +6,9 @@ Congratulations @{{ user.username }}, you've completed this course! But, a good 
 
 When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
 
-As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
+## Step 7: Manage app permissions
 
+As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
 
 ### :keyboard: Activity: Restrict this app
 1. Click on the **Settings** tab in your repository

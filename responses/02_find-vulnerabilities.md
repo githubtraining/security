@@ -17,9 +17,11 @@ GitHub receives a notifications of a newly-announced vulnerability. Then, we che
 
 **GitHub never publicly discloses identified vulnerabilities for any repository.**
 
-### :keyboard: Activity: Identify the suggested version update
+## Step 2: Find this repository's vulnerable dependencies
 
-Use GitHub's security alerts to identify a vulnerable NPM dependency. Here's how:
+Use GitHub's security alerts to identify a vulnerable NPM dependency.
+
+### :keyboard: Activity: Identify the suggested version update
 
 1. Click the **Insights** tab in your repository
 1. On the left hand navigation bar, click **Dependencies**
