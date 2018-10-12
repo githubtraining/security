@@ -2,9 +2,9 @@
 
 ![celebrate](https://octodex.github.com/images/benevocats.jpg)
 
-Congratulations @{{ user.username }}, you've completed this course! 
+Congratulations @{{ user.username }}, you've completed this course!
 
-When considering the security of your repository, consider the installed applications, like me. But from a security perspective, each of these apps has access to some of your data. Every so often, check the apps and integrations that have access to your repositories. Look for things like active use, or  permissions giving more access than necessary.
+When considering the security of your repository, consider the installed applications, like me. Every app installed on your repository has access to some of your data. Even if it is harmless (like me), it is a good idea to periodically check and prune the list of installed apps and integrations on your repositories. Look for things like active use, or  permissions giving more access than necessary.
 
 ## Step 7: Manage app permissions
 
