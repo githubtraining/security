@@ -6,20 +6,11 @@ Congratulations @{{ user.username }}, you've completed this course!
 
 When considering the security of your repository, consider the installed applications, like me. Every app installed on your repository has access to some of your data. Even if it is harmless (like me), it is a good idea to periodically check and prune the list of installed apps and integrations on your repositories. Look for things like active use, or  permissions giving more access than necessary.
 
-## Step 7: Manage app permissions
+### Manage app permissions
 
 As much as it pains me to leave you, I want you to uninstall me from this repository. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
 
-### :keyboard: Activity: Restrict this app
-1. Click on the **Settings** tab in your repository
-1. On the left hand side, click **Integrations & services**
-1. Find **Learning Lab**, and click **Configure**
-1. Enter your password if prompted
-1. Choose the repository access that you'd like to keep
-    - _Note: If you'd like to take more Learning Lab courses in the future, **do not** uninstall Learning Lab. If you uninstall Learning Lab, you'll need to reinstall the app when you try another course. You may also lose some progress._
-1. To make taking Learning Lab courses easier in the future, click **Only select repositories**
-1. Select a repository that you have completed with Learning Lab, like this one
-1. Click **Save**
+Follow the guidelines in [GitHub's documentation](https://help.github.com/articles/reviewing-your-authorized-integrations/#reviewing-your-authorized-github-apps) to review authorized OAuth and GitHub Apps. If you'd like to practice, you can uninstall Learning Lab from this repository.
 
 ### What went well
 
