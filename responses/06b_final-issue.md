@@ -8,7 +8,7 @@ When considering the security of your repository, consider the installed applica
 
 ## Step 7: Manage app permissions
 
-As much as it pains me to leave you, I want you to uninstall me on some of your repositories. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
+As much as it pains me to leave you, I want you to uninstall me from this repository. I won't be able to congratulate you on achieving this task, but know I'm excited about your progress.
 
 ### :keyboard: Activity: Restrict this app
 1. Click on the **Settings** tab in your repository
