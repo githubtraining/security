@@ -6,23 +6,25 @@ This repository has some existing dependencies which will need updating to stay 
 
 ### How can we identify dependencies and if they are vulnerable?
 
-This repository is a Node.js project utilizing NPM. Because of that, the `package.json` defines this repository's dependencies.  For our time together, we'll be focusing on these JavaScript dependencies. Keep in mind that different programming languages may have different dependency files. You might work with a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, or `pipfile.lock` file.
+This repository is a Node.js project utilizing NPM. Because of that, the `package.json` defines this repository's dependencies.  For our time together, we'll be focusing on these JavaScript dependencies. Keep in mind that different programming languages may have different dependency files. You might work with a `Gemfile`, `Gemfile.lock`, `*.gemspec`, `requirements.txt`, `pipfile.lock`, or other files.
 
 How can we know these dependencies are secure? It's not always easy, but GitHub is watching out.
 
 ### GitHub's security alerts for vulnerable dependencies
-GitHub tracks public vulnerabilities in Ruby gems, NPM and Python packages.
+GitHub tracks public vulnerabilities in Ruby gems, NPM, Python, Java, and .Net packages.
 
-GitHub receives a notifications of a newly-announced vulnerability. Then, we check for repositories that use the affected version of that dependency. Then, we send security alerts to a set of people within those affected repositories. The owners are the ones contacted by default. But, it's possible to configure specific teams or individuals to get these important notifications.
+GitHub receives a notification of a newly-announced vulnerability. Next, we check for repositories that use the affected version of that dependency. We send security alerts to a set of people within those affected repositories. The owners are contacted by default. But, it's possible to configure specific teams or individuals to get these important notifications.
 
 **GitHub never publicly discloses identified vulnerabilities for any repository.**
 
+## Step 2: Find this repository's vulnerable dependencies
+
+Use GitHub's security alerts to identify a vulnerable NPM dependency.
+
 ### :keyboard: Activity: Identify the suggested version update
 
-Use GitHub's security alerts to identify a vulnerable NPM dependency. Here's how:
-
 1. Click the **Insights** tab in your repository
-1. On the left hand navigation bar, click **Dependencies**
+1. On the left hand navigation bar, click **Dependency graph**
 1. Scroll down until you see a yellow bar highlighting the dependency named `debug`, and click on the right hand side of the yellow `debug` section
 1. Take note of the suggested version
 1. Comment in this issue with the suggested update version

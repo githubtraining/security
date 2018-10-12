@@ -16,6 +16,10 @@ In this course you will learn how to:
 
 For this course, you'll need to be comfortable with the GitHub Flow. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
+## Step 1: Your project on GitHub Pages
+
+This project is centered around a memory game that will be deployed with GitHub Pages.
+
 {% if private %}
 
 ### :keyboard: Activity: Enable vulnerability alerts & GitHub Pages

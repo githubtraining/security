@@ -5,6 +5,6 @@ Collaboration is key to building great software. As you welcome more contributio
 In this course, you’ll learn how to:
 - Enable security features for repositories hosted in GitHub
 - Detect vulnerable dependencies in repositories when notified by GitHub's security alerts
-- Utilize best practices for to keep sensitive data out of repositories
+- Utilize best practices to keep sensitive data out of repositories
 
 This course has a dedicated message board on the [GitHub Community Forum]({{ communityBoard }}). Create a post to start a conversation, discuss this course with GitHub Trainers and participants, or troubleshoot any issues you encounter.
