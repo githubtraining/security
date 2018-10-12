@@ -13,28 +13,11 @@ before:
     title: Update the vulnerable dependency
     body: 03_update-dependency.md
     head: update-dependency
-  - type: gate
-    left: '%course.private%'
-    operator: ===
-    right: true
-    required: false
-    else:
-      type: octokit
-      method: 'repos.get'
-      owner: '%user.username%'
-      repo: '%course.template.name%'
-      action_id: gotten_repo
-  - type: gate
-    left: '%course.private%'
-    operator: ===
-    right: false
-    required: false
-    else:
-      type: octokit
-      method: 'repos.get'
-      owner: '%user.username%'
-      repo: '%user.username%-%course.template.name%'
-      action_id: gotten_repo
+  - type: octokit
+    method: 'repos.get'
+    owner: '%payload.repository.owner.login%'
+    repo: '%payload.repository.name%'
+    action_id: gotten_repo
   - type: createIssue
     title: Welcome
     body: 01a_class-introduction-issue.md
