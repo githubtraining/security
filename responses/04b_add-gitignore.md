@@ -10,7 +10,7 @@ Additionally, the `.gitignore` file can, and should, be committed into your repo
 
 ## Step 5: Ignore files
 
-In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` commonly include sensitive data. Let's add those files to the `.gitignore`.
+In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` commonly include sensitive data. This helps you keep files with sensitive data secure and private. Let's add those files to the `.gitignore`. 
 
 ### :keyboard: Activity: Updating the .gitignore file
 
