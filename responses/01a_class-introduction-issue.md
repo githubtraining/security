@@ -18,7 +18,7 @@ For this course, you'll need to be comfortable with the GitHub Flow. If you need
 
 ### Vulnerability alerts
 
-You may have already noticed some alerts from GitHub about this repository. You may have gotten an email, or seen a yellow bar warning you about the `package.json` file.
+You may notice some alerts from GitHub about this repository. You may get an email, or see a yellow bar warning you about the `package.json` file.
 
 ![dependency vulnerability alert](https://user-images.githubusercontent.com/9906718/46882979-c275b680-ce50-11e8-9f47-2081daf20b98.png)
 
