@@ -24,7 +24,7 @@ Use GitHub's security alerts to identify a vulnerable NPM dependency.
 ### :keyboard: Activity: Identify the suggested version update
 
 1. Click the **Insights** tab in your repository
-1. On the left hand navigation bar, click **Dependencies**
+1. On the left hand navigation bar, click **Dependency graph**
 1. Scroll down until you see a yellow bar highlighting the dependency named `debug`, and click on the right hand side of the yellow `debug` section
 1. Take note of the suggested version
 1. Comment in this issue with the suggested update version
