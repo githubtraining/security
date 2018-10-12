@@ -16,14 +16,6 @@ In this course you will learn how to:
 
 For this course, you'll need to be comfortable with the GitHub Flow. If you need a refresher on the GitHub flow, check out the [the Introduction to GitHub course]({{ host}}/courses/introduction-to-github).
 
-### Vulnerability alerts
-
-You may have already noticed some alerts from GitHub about this repository. You may have gotten an email, or seen a yellow bar warning you about the `package.json` file.
-
-![dependency vulnerability alert](https://user-images.githubusercontent.com/9906718/46882979-c275b680-ce50-11e8-9f47-2081daf20b98.png)
-
-We will be addressing these alerts throughout this course, so it's okay to ignore them for now.
-
 ## Step 1: Your project on GitHub Pages
 
 This project is centered around a memory game that will be deployed with GitHub Pages.
