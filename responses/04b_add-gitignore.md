@@ -24,6 +24,6 @@ In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` c
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
-<h3 align="center">Return to this pull request for my next comment</h3>
+<h3 align="center">Return to this pull request for my next comment.</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._

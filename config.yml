@@ -45,7 +45,7 @@ steps:
         with: 02_closed-issue.md
         data:
           url: '%actions.issue.data.html_url%'
-          pages: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%'
+          pages: 'https://%payload.repository.owner.login%.github.io/%payload.repository.name%' #TODO Fix link
 
   - title: Find the vulnerable dependency
     description: Find the vulnerable dependency, and comment with the suggested update version.
@@ -55,7 +55,7 @@ steps:
       - type: respond
         with: 03_found-vulnerability.md
         data:
-          url: 'https://github.com/%payload.repository.owner.login%/%payload.repository.name%/pull/1'
+          url: '{{ repoUrl }}/pull/1'
       - type: closeIssue
         issue: Find repository vulnerabilities
 
@@ -99,7 +99,7 @@ steps:
       - type: respond
         with: 04a_good-merge.md
         data:
-          url: 'https://github.com/%payload.repository.owner.login%/%payload.repository.name%/pull/3'
+          url: '{{ repoUrl }}/pull/3'
 
   - title: Add to the `.gitignore` file
     description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
@@ -140,7 +140,7 @@ steps:
         title: Congratulations!
         body: 06b_final-issue.md
         data:
-          url: 'https://%user.username%.github.io/%payload.repository.name%'
+          url: 'https://%user.username%.github.io/%payload.repository.name%' #TODO Fix URL
         action_id: finalIssue
       - type: respond
         with: 06a_nice-merge.md
