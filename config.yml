@@ -31,7 +31,7 @@ before:
 steps:
   - title: Enable repository settings
     description: Enable settings in your repository for the next activities.
-    event: deployment
+    event: page_build
     link: '{{ repoUrl }}/issues/2'
     actions:
       - type: createIssue
