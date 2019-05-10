@@ -59,8 +59,6 @@ steps:
     actions:
       - type: respond
         with: 03_found-vulnerability.md
-        data:
-          url: '{{ repoUrl }}/pull/1'
       - type: closeIssue
         issue: Find repository vulnerabilities
 
