@@ -29,4 +29,4 @@ Want to learn more options to secure your repository? Check out the [documentati
 Want to keep learning? Feel free to [check out our other courses]({{ host }}/courses).
 
 <hr>
-<h3 align="center">I won't respond to this issue, go ahead and close it when finished</h3>
+<h3 align="center">I won't respond to this issue, go ahead and close it when finished.</h3>
