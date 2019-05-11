@@ -15,7 +15,7 @@ In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` c
 ### :keyboard: Activity: Updating the .gitignore file
 
 1. Within this pull request, go to **Files changed**.
-1. Click the pencil in the right upper corner to edit the `.gitignore` file.
+1. Click the ellipsis (`...`) in the right upper corner and click **Edit file** to edit the `.gitignore` file.
 1. Edit the file by adding `.env` to line 1.
 1. Scroll down, and commit your change.
 

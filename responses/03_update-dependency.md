@@ -11,6 +11,6 @@ Now that you know the recommended version, it's time to edit the `package.json` 
 ### :keyboard: Activity: Update the `package.json` file
 
 1. Within this pull request, go to **Files changed**.
-1. Click the pencil in the right upper corner to edit the `package.json` file.
+1. Click the ellipsis (`...`) in the right upper corner and click **Edit file** to edit the `package.json` file.
 1. Fix the vulnerability by updating to the latest version of the dependency that you took note of earlier.
 1. Scroll down, and commit your change.
