@@ -35,7 +35,7 @@ This project is centered around a memory game that will be deployed with GitHub 
 ### :keyboard: Activity: Enable GitHub Pages
 
 
-1. Click the **Settings** tab in your repository.
+1. Click the [**Settings**]({{ repoUrl }}/settings) tab in your repository.
 1. Scroll down to **GitHub Pages**. Select `master` as a **Source**, and click **Save**.
 
 {% endif %}
