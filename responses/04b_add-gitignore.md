@@ -14,16 +14,16 @@ In this pull request, I'm adding a `.gitignore` file. Files ending with `.env` c
 
 ### :keyboard: Activity: Updating the .gitignore file
 
-1. Within this pull request, go to **Files changed**
-1. Click the pencil in the right upper corner to edit the `.gitignore` file
-1. Edit the file by adding `.env` to line 1
-1. Scroll down, and commit your change
+1. Within this pull request, go to **Files changed**.
+1. Click the ellipsis (`...`) in the right upper corner and click **Edit file** to edit the `.gitignore` file.
+1. Edit the file by adding `.env` to line 1.
+1. Scroll down, and commit your change.
 
  > _Note: Even after adding a file to the `.gitignore`, the previous commits that have edited that file still exist. If you accidentally committed sensitive data, first change any tokens or passwords. Then, contact GitHub Support for help correcting your history._
 
 For a printable version of the steps in this course, check out the [Quick Reference Guide]({{ host }}/public/{{ course.slug }}.pdf).
 
 <hr>
-<h3 align="center">Return to this pull request for my next comment</h3>
+<h3 align="center">Return to this pull request for my next comment.</h3>
 
 > _Sometimes I respond too fast for the page to update! If you perform an expected action and don't see a response from me, wait a few seconds. Then refresh the page for your next steps._
