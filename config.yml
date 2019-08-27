@@ -7,6 +7,16 @@ tags:
 template:
     name: security-on-github
     repo: security-template
+preferences:
+- type: dropdown
+  name: language
+  label: Language
+  description: Choose your preferred language.
+  options:
+  - label: English
+    value: en
+  - label: 日本語
+    value: ja
 before:
   - type: updateBranchProtection
   - type: createPullRequest
@@ -31,6 +41,10 @@ before:
 steps:
   - title: Enable repository settings
     description: Enable settings in your repository for the next activities.
+    translations:
+      ja:
+        title: リポジトリの設定を有効化しよう
+        description: 次のステップのためにリポジトリの設定を有効化しましょう。
     event: page_build
     link: '{{ repoUrl }}/issues/2'
     actions:
@@ -54,6 +68,10 @@ steps:
 
   - title: Find the vulnerable dependency
     description: Find the vulnerable dependency, and comment with the suggested update version.
+    translations:
+      ja:
+        title: 脆弱性のある依存関係を見つけよう
+        description: 脆弱性のある依存関係と、推奨バージョンのコメントを見つけましょう。
     event: issue_comment.created
     link: '{{ repoUrl }}/issues/4'
     actions:
@@ -64,6 +82,10 @@ steps:
 
   - title: Update the dependency version
     description: Edit the file in the pull request to update the dependency.
+    translations:
+      ja:
+        title: 依存関係のバージョンを更新しよう
+        description: 依存関係のバージョンを更新するためにプルリクエストを使ってファイルを編集しましょう。
     event: pull_request.synchronize
     link: '{{ repoUrl }}/pull/1'
     actions:
@@ -84,6 +106,10 @@ steps:
 
   - title: Merge your pull request
     description: Merge the pull request you've opened to update the vulnerability dependency.
+    translations:
+      ja:
+        title: プルリクエストをマージしよう
+        description: 脆弱性のある依存関係を更新するためにオープンしたプルリクエストをマージしましょう。
     event: pull_request.closed
     link: '{{ repoUrl }}/pull/1'
     actions:
@@ -104,6 +130,10 @@ steps:
 
   - title: Add to the `.gitignore` file
     description: The `.gitignore` file is ready to be edited in an open pull request. Add the `.env` file to the `.gitignore` file.
+    translations:
+      ja:
+        title: プルリクエストで `.gitignore` ファイルに追記しよう
+        description: オープンしたプルリクエストを使って `.gitignore` ファイルを更新する準備ができました。 .env` ファイルを `.gitignore` に追加しましょう。
     event: pull_request.synchronize
     link: '{{ repoUrl }}/pull/3'
     actions:
@@ -123,6 +153,10 @@ steps:
 
   - title: Merge the pull request
     description: Merge the second pull request with updates to the `.gitignore` file.
+    translations:
+      ja:
+        title: プルリクエストをマージしよう
+        description: 2つ目のプルリクエストをマージして `.gitignore` ファイルを更新しよう
     event: pull_request.closed
     link: '{{ repoUrl }}/pull/3'
     actions:
