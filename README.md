@@ -10,7 +10,7 @@ Every Learning Lab course is made up of:
 
 The course repository is written in YAML and Markdown. The template repository could be written in any language that supports the learning objectives.
 
-For more information on the goals of this course, check out the [`course-details.md`](course-details.md). 
+For more information on the goals of this course, check out the [`course-details.md`](course-details.md).
 
 ## Contribute
 
