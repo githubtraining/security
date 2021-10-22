@@ -28,7 +28,7 @@
 1. リポジトリの[**Settings**]({{ repoUrl }}/settings)タブをクリック
 1. **Data services**のセクションまで画面をスクロール
 1. **Data services**セクションにて、全てのデータサービスにチェックを入れて有効化
-1. **GitHub Pages**のセクションまで画面をスクロールし、**Source**として`master`を選択し、**Save**をクリック
+1. **GitHub Pages**のセクションまで画面をスクロールし、**Source**として`main`を選択し、**Save**をクリック
 
 {% else %}
 
@@ -36,7 +36,7 @@
 
 
 1. リポジトリの[**Settings**]({{ repoUrl }}/settings)タブをクリック
-1. **GitHub Pages**のセクションまで画面をスクロールし、**Source**として`master`を選択し、**Save**をクリック
+1. **GitHub Pages**のセクションまで画面をスクロールし、**Source**として`main`を選択し、**Save**をクリック
 
 {% endif %}
 
