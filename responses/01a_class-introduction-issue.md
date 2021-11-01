@@ -26,8 +26,8 @@ This project is centered around a memory game that will be deployed with GitHub 
 
 
 1. Click the [**Settings**]({{ repoUrl }}/settings) tab in your repository.
-1. Scroll down until you see **Data services**.
-1. Under **Data services**, click the check boxes to enable all the data services.
+1. Scroll down until you see **Security & Analysis** in the navigation side bar.
+1. Under **Security & Analysis**, click the check boxes to enable all the data services.
 1. Scroll down to **GitHub Pages** and select `main` as a **Source**.
 
 {% else %}
